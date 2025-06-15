@@ -1,4 +1,6 @@
 ---
+title: Blue
 ---
 
-# tonic-starter
+# Blue
+Blue Jekyll theme
