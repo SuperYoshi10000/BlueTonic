@@ -1,5 +1,6 @@
 ---
 title: Blue
+layout: default
 ---
 
 # Blue
