@@ -1,7 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Gothic:wght@400..700&display=swap');
+
+* {
+  --color-bg: #007fff;
+  --color-bg2: #003fff;
+  --color-fg: #00007f;
+  --color-line: #00003f;
+}
+
 body {
-  background-color: #007fff;
-  font-family: sans-serif;
+  background-color: var(--color-bg);
+  font-family: "Special Gothic", sans-serif;
   margin: auto;
   max-width: 70ch;
-  color: #00007f;
+  color: var(--color-fg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+h1, h2 {
+  border-bottom: 1px solid var(--color-line);
+}
+hr {
+  border: none;
+  border-bottom: 1px solid var(--color-line);
+}
+
+pre, code {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: var(--color-bg2);
+}
+code {
+  padding: 2px;
+  border-radius: 2px;
+}
+pre {
+  padding: 5px;
+  border-radius: 5px;
 }
