@@ -1,7 +1,12 @@
 # Blue
+![GitHub branch status](https://img.shields.io/github/checks-status/SuperYoshi10000/BlueTonic/main)
+![GitHub License](https://img.shields.io/github/license/SuperYoshi10000/bluetonic)
+
+
+
 This theme is a blue theme for Jekyll.
 
 Everything is some shade of blue.
 
 ## Usage
-You can download it at [a](https://example.com).
+You can find it at [a](https://example.com).
