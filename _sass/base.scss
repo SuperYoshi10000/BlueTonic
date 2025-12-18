@@ -6,6 +6,9 @@
   --color-bg2: #003fff7f;
   --color-header-highlight: #ffffff2f;
   --color-fg: #00007f;
+  --color-link: #0000df;
+  --color-linkh: #00009f;
+  --color-linka: #00005f;
   --color-line: #00003f;
 
   transition: 0.2s ease;
@@ -25,6 +28,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  cursor: copy;
 }
 h1, h2 {
   background: linear-gradient(to bottom, transparent 50%, var(--color-header-highlight) 100%);
@@ -49,6 +53,18 @@ code {
 pre {
   padding: 5px;
   border-radius: 5px;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+a:is(:hover, :focus) {
+  color: var(--color-linkh);
+  text-decoration: 2px underline;
+}
+a:active {
+  color: var(--color-linka);
 }
 
 :is(h1, h2, h3, h4, h5, h6):hover {

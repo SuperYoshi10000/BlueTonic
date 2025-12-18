@@ -1,5 +1,5 @@
 ---
-title: Blue
+title: Blue Jekyll theme
 layout: default
 ---
 
@@ -13,7 +13,7 @@ Continued paragraph
 
 Another paragraph
 
-Text with **bold**, *italic*, and ~~strikethrough~~ formatting  
+Text with **bold**, *italic*, ~~strikethrough~~, and <u>underline</u> formatting  
 [Link](.)
 
 |Column 1|Column 2|
