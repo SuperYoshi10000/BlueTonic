@@ -10,6 +10,8 @@
   --color-linkh: #00009f;
   --color-linka: #00005f;
   --color-line: #00003f;
+  --color-codeshadow: #003fcf7f;
+  --color-codehovershadow: #00003f7f;
 
   transition: 0.2s ease;
 }
@@ -17,7 +19,6 @@
 :root {
   background: linear-gradient(to right, var(--color-bga) 0%, var(--color-bg) calc(50% - 40ch), var(--color-bg) calc(50% + 40ch), var(--color-bga) 100%);
 }
-
 body {
   font-family: "Special Gothic", sans-serif;
   margin: auto;
@@ -34,6 +35,10 @@ h1, h2 {
   background: linear-gradient(to bottom, transparent 50%, var(--color-header-highlight) 100%);
   border-bottom: 1px solid var(--color-line);
 }
+:is(h1, h2, h3, h4, h5, h6):hover {
+  font-weight: bolder;
+}
+
 hr {
   border: none;
   border-bottom: 2px solid var(--color-line);
@@ -45,10 +50,14 @@ pre, code {
 }
 pre, :not(pre) > code {
   background-color: var(--color-bg2);
+  box-shadow: inset 0 0 3px var(--color-codeshadow);
+}
+:is(pre, :not(pre) > code):hover {
+  box-shadow: inset 0 0 3px var(--color-codehovershadow);
 }
 code {
   padding: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 pre {
   padding: 5px;
@@ -57,7 +66,7 @@ pre {
 
 a {
   color: var(--color-link);
-  text-decoration: none;
+  text-decoration: inherit;
 }
 a:is(:hover, :focus) {
   color: var(--color-linkh);
@@ -65,8 +74,4 @@ a:is(:hover, :focus) {
 }
 a:active {
   color: var(--color-linka);
-}
-
-:is(h1, h2, h3, h4, h5, h6):hover {
-  font-weight: bolder;
 }
