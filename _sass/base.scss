@@ -3,7 +3,7 @@
 * {
   --color-bg: #007fff;
   --color-bga: #00afff;
-  --color-bg2: #003fff;
+  --color-bg2: #003fff7f;
   --color-header-highlight: #ffffff2f;
   --color-fg: #00007f;
   --color-line: #00003f;
@@ -33,11 +33,13 @@ h1, h2 {
 hr {
   border: none;
   border-bottom: 2px solid var(--color-line);
-  box-shadow: 0 0 10px #ffffff;
+  box-shadow: 0 0 10px white;
 }
 
 pre, code {
   font-family: "IBM Plex Mono", monospace;
+}
+pre, :not(pre) > code {
   background-color: var(--color-bg2);
 }
 code {
@@ -49,6 +51,6 @@ pre {
   border-radius: 5px;
 }
 
-:is(h1, h2):hover {
+:is(h1, h2, h3, h4, h5, h6):hover {
   font-weight: bolder;
 }

@@ -1,0 +1,11 @@
+<script>
+  function copyHeaderLink(/** @type {MouseEvent} */ event) {
+    const id = event.target.id;
+    const url = `${location.href.replace(/#.*/, '')}#${id}`;
+    navigator.clipboard.writeText(url);
+    location.hash = id;
+  }
+  document.querySelectorAll("h1,h2,h3,h4,h5,h6")
+    .forEach(header => header.addEventListener("click", copyHeaderLink));
+
+</script>
