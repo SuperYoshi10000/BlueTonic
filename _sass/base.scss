@@ -2,13 +2,20 @@
 
 * {
   --color-bg: #007fff;
+  --color-bga: #00afff;
   --color-bg2: #003fff;
+  --color-header-highlight: #ffffff2f;
   --color-fg: #00007f;
   --color-line: #00003f;
+
+  transition: 0.2s ease;
+}
+
+:root {
+  background: linear-gradient(to right, var(--color-bga) 0%, var(--color-bg) calc(50% - 40ch), var(--color-bg) calc(50% + 40ch), var(--color-bga) 100%);
 }
 
 body {
-  background-color: var(--color-bg);
   font-family: "Special Gothic", sans-serif;
   margin: auto;
   max-width: 70ch;
@@ -20,11 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 h1, h2 {
+  background: linear-gradient(to bottom, transparent 50%, var(--color-header-highlight) 100%);
   border-bottom: 1px solid var(--color-line);
 }
 hr {
   border: none;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 2px solid var(--color-line);
+  box-shadow: 0 0 10px #ffffff;
 }
 
 pre, code {
@@ -38,4 +47,8 @@ code {
 pre {
   padding: 5px;
   border-radius: 5px;
+}
+
+:is(h1, h2):hover {
+  font-weight: bolder;
 }

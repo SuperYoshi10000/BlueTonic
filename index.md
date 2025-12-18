@@ -6,7 +6,7 @@ layout: default
 # Blue
 Blue Jekyll theme
 
-# Header
+## Header
 ### Subheader
 Paragraph  
 Continued paragraph
@@ -30,3 +30,5 @@ Text with `some code`
 ```
 Block of code
 ```
+
+## This header has **bold** and *italic* text in it
