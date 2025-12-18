@@ -8,4 +8,13 @@
   document.querySelectorAll("h1,h2,h3,h4,h5,h6")
     .forEach(header => header.addEventListener("click", copyHeaderLink));
 
+  function copyText(/** @type {MouseEvent} */ event) {
+    event.stopPropagation();
+    const content = event.target.textContent;
+    navigator.clipboard.writeText(content);
+  }
+  document.querySelectorAll("pre,code")
+    .forEach(code => code.addEventListener("click", copyText));
+
+
 </script>

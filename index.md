@@ -29,6 +29,7 @@ There is a line below this text
 Text with `some code`
 ```
 Block of code
+Another line of code
 ```
 
 ## This header has **bold** and *italic* text in it
