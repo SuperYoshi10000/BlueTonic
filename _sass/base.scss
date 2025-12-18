@@ -46,6 +46,7 @@ hr {
 }
 
 pre, code {
+  cursor: text;
   font-family: "IBM Plex Mono", monospace;
 }
 pre, :not(pre) > code {
@@ -74,4 +75,21 @@ a:is(:hover, :focus) {
 }
 a:active {
   color: var(--color-linka);
+}
+
+th, td {
+  padding: 2px 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr th {
+  border-bottom: 2px solid var(--color-line);
+}
+tr:not(:last-child) td {
+  border-bottom: 1px solid var(--color-line);
+}
+:is(th, td):not(:last-child) {
+  border-right: 1px solid var(--color-line);
 }
